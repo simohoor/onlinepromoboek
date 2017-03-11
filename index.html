@@ -1,1 +1,248 @@
-<h1>Hello!</h1>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+
+		<title>Artevelde Alumni</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<!-- Favicon -->
+		<link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+		<link rel="manifest" href="img/favicon/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+
+		<!-- Fonts -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:300" rel="stylesheet">
+
+		<!-- Compiled and minified CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+
+		<!-- custom Styles -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	</head>
+	<body>
+
+		<!-- Dropdown Structure -->
+		<ul id="dropdown1" class="dropdown-content">
+			<li><a href="#">2016 - 2017</a></li>
+		</ul>
+
+		<!-- Navigation -->
+		<nav>
+			<div class="nav-wrapper">
+				<a href="#" class="logo"><img src="img/logo_alumni.png"></a>
+				<ul id="nav-mobile" class="right">
+					<li><a href="https://www.arteveldehogeschool.be/opleidingen/bachelor/grafische-en-digitale-media" target="_blank">Arteveldehogeschool</a></li>
+					<li><a href="#/info">Info</a></li>
+
+					<!-- Dropdown Trigger -->
+					<li><a class="dropdown-button" href="#!" data-activates="dropdown1">Afstudeerjaar<i class="material-icons right">arrow_drop_down</i></a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<div ng-app="myapp">
+			<!--list of all students-->
+			<div ng-view></div>
+			<script type="text/ng-template" id="/list.html">  
+					<!-- Header -->
+				<header>
+					<iframe src="https://player.vimeo.com/video/112384599?color=c9ff23" class="student-video" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				</header>
+				<h1 class="title margin">
+					<div class="school-year">16 17</div>
+					<div class="education">ALUMNI<br> GRAFISCHE EN DIGITALE <br>MEDIA</div>
+				</h1>
+		
+				<!-- container div for search engine -->
+				<div id="users">
+					<p class="search-helper">Zoek naar studenten door middel van hun naam, afstudeerrichting of tag.</p>
+					<!-- searchfield -->
+					<div class="row margin">
+						<form class="col s6 offset-m3">
+						<div class="input-field">
+								<input class="search" id="search" type="search" ng-model="searchText" required>
+								<label for="search"><i class="material-icons">search</i></label>
+								<i class="material-icons">close</i>
+							</div>
+						</form>
+					</div>
+						
+					<!-- sort buttons-->
+					<div class="row margin sort-container">
+						<button class="waves-effect waves-light btn sort" id="{{ sorting.name }}" data-ng-repeat="sorting in sort" data-ng-click="setSelectedClient(sorting.id)" ng-class="{'active': {{sorting.classname}}}">
+							Sorteer op {{ sorting.name }}
+						</button>
+					</div>
+
+					<!-- checkboxes for filtering -->
+					<div id="checkboxlist" class="row-filters margin">
+						<div class="column-filters">
+							<input class="hidden" id="Crossmedia-ontwerp" type="checkbox" name="Crossmedia-ontwerp" value="Crossmedia-ontwerp" data-ng-click="setSorting('Crossmedia-ontwerp')"  ng-class="{'Crossmedia-ontwerp': isCmo}">
+							<label class="waves-effect waves-light btn filter" for="Crossmedia-ontwerp">Crossmedia-ontwerp </label>
+						</div>
+						<div class="column-filters">
+							<input class="hidden" id="Grafimediabeleid" type="checkbox" name="Grafimediabeleid" value="Grafimediabeleid" data-ng-click="setSorting('Grafimediabeleid')"  ng-class="{'Grafimediabeleid': isGmb}" >
+							<label class="waves-effect waves-light btn filter" for="Grafimediabeleid">Grafimediabeleid</label>
+						</div>
+						<div class="column-filters">
+							<input class="hidden" id="Multimediaproductie" type="checkbox" name="Multimediaproductie" value="Multimediaproductie" data-ng-click="setSorting('Multimediaproductie')"  ng-class="{'Multimediaproductie': isMmp}">
+							<label class="waves-effect waves-light btn filter" for="Multimediaproductie">Multimediaproductie</label>
+						</div>
+					</div>
+				</div>
+
+				<ul class="list" id="list" id="searchTextResults">
+					<div class="row list-container">
+						<li ng-repeat="item in items | filter:myFilter | filter:searchText">
+							<div class="col s3 student-block">
+								<a href="#/student/{{ item.id }}"  class="list-group-item">
+									<img class="list-student-picture" src="img/students/{{ item.studentnr }}.jpg">
+									<h3 class="name">{{ item.name }} {{ item.lastname }}</h3>
+									<p class="richting">{{ item.field_of_study }}</p>
+								</a>
+							</div>
+						</li>
+					</div>
+				</ul>     
+			</script>
+
+			<!--detail of student-->
+			<script type="text/ng-template" id="/detail.html">  
+				<h1 class="title margin">
+					<div class="school-year">16 17</div>
+					<div class="education">ALUMNI<br> GRAFISCHE EN DIGITALE <br>MEDIA</div>
+				</h1>
+				<div class="container">
+					<div class="row">
+						<a ng-click="back()"  class="back">vorige</a><i class="fa fa-caret-left back-icon" aria-hidden="true"></i>
+						<div class="col s12 card card-container">
+							<div class="card-content white-text"> 	
+								<p id="firstname-mobile">{{ data.name }}</p>
+								<p id="lastname-mobile">{{ data.lastname }}</p>	
+								<img src="img/students/{{ data.studentnr }}.jpg" class="student-picture">
+								<!-- Student Info -->
+								<div>
+									<ul class="left-container">
+										<p id="firstname">{{ data.name }}</p>
+										<p id="lastname">{{ data.lastname }}</p>
+										<li class="student-link" ng-show="data.link">Link</li>
+										<li ng-show="data.link" class="right info"><a class="student-link" target="_blank" href="{{ data.link }}">Meer persoonlijke info</a></li>
+										<li>E-mail</li>
+										<li class="right info">{{ data.mail }}</li>
+										<li>Afstudeerrichting</li>
+										<li id="studentiRichting" class="right info">{{ data.field_of_study }}</li>
+										<li>Specialisatie</li>
+										<li class="right info">{{ data.section }}</li>
+										<li>Woonplaats</li>
+										<li class="right info">{{ data.residence }}</li>
+										<li>Gewenste werkregio</li>
+										<li class="right info">{{ data.workplace }}</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<p class="tag-container" id="detail">
+						<span class="tags" id="studentTag1">#{{ data.tag1 }}</span>
+						<span class="tags" id="studentTag2">#{{ data.tag2 }}</span> 
+						<span class="tags" id="studentTag3">#{{ data.tag3 }}</span>
+					</p>
+				</div>  
+			</script>
+			<!-- Info -->
+			<script type="text/ng-template" id="/info.html">
+			<div class="container info-container">
+				<div class="row">
+					<img class="info-image" src="img/groepsfoto.jpg">
+					<p>
+						Het promoboek is een laatstejaarsproject waar we met 10 studenten uit de verschillende afstudeerrichtingen aan werken. Het is een soort van jaarboek, waar alle afstuderende studenten grafische en digitale media in voorkomen. 
+						<br>Dit boek wordt meegegeven aan de studenten op de promoviering samen met het diploma. Het boek komt ook terecht bij een aantal bedrijven die vaak werkkrachten zoeken in onze sector.
+					</p>
+					<p>
+						Naast het boek maken we ook een filmpje die zal te zien zijn op de promoviering en op deze site, met opnieuw alle afstuderende studenten in beeld. Het filmpje is als het ware het boek die tot leven komt.
+					</p>
+					<p>
+						We focussen niet alleen op de studenten, maar ook alle medewerkers op campus Mariakerke worden in de kijker geplaatst. Een poster waarop de docenten en alle medewerkers te zien zijn, hangt op verschillende plaatsen op de campus.
+					</p>
+					<p>
+						En last but not least, werd alle info nog eens gebundeld op een site waarop de studenten de kans kregen om extra info en eventueel een portfolio, LinkedIn-profiel of iets dergelijks te delen, zodat bedrijven hen ook via deze weg kunnen contacteren. 
+					</p>
+					<p>
+						Het promoboekteam wil zeker nogmaals alle studenten, medewerkers van campus Mariakerke en iedereen die heeft bijgedragen tot het eindresultaat bedanken. We zijn trots op het resultaat en het mag zeker gezien worden. 
+					</p>
+					<p>
+						Groeten, het promoboekteam<br>
+						Vincent Colman, Celien De Roo, Simon Hoornaert, Lode Muylaert, Mathias Notaert, Laurens Segaert, Phebe Van der Meulen, Lauren Vandeveire, Lisa Van Landuyt en Mathias Zwart.
+					</p>
+				</div>
+			</div>
+		</script>
+		</div>
+
+		<!-- Footer -->
+		<footer class="page-footer indigo darken-4">
+			<div class="container">
+				<div class="row">
+					<div class="col l6 s12">
+						<h5 class="white-text">Contact</h5>
+						<p class="grey-text text-lighten-4">Grafische en digitale media</p>
+						<p class="grey-text text-lighten-4">Industrieweg 232 | 9030 Gent-Mariakerke</p>
+						<p class="grey-text text-lighten-4">Tel: 09 234 86 00</p>
+						<p class="grey-text text-lighten-4">info.grafische.digitalemedia@arteveldehs.be</p>
+					</div>
+					<div class="col l4 offset-l2 s12">
+						<ul>
+							<li>
+								<a class="grey-text text-lighten-3" href="https://twitter.com/arteveldegdm" target="_blank">Twitter</a>
+							</li>	
+							<li>
+								<a class="grey-text text-lighten-3" href="https://www.instagram.com/explore/locations/487127602/grafische-en-digitale-media-arteveldehogeschool/" target="_blank">Instagram</a>
+									
+							</li>
+							<li>
+								<a class="grey-text text-lighten-3" href="https://www.facebook.com/GrafischeendigitalemediaArteveldehogeschool/?fref=ts" target="_blank">Facebook</a>
+									
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer-copyright indigo darken-3">
+				<div class="container ">
+					<a class="white-text" href="https://www.arteveldehogeschool.be/" target="_blank">© 2016 - 2017 Arteveldehogeschool</a>
+					<a class="text-lighten-4 right" href="https://www.arteveldehogeschool.be/" target="_blank"><img class="logo-footer" src="img/logo.png"></a>
+				</div>
+			</div>
+		</footer>
+
+		<!-- Compiled and minified JavaScript -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+
+		<!-- lodash -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.js"></script>
+
+		<!-- angular -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.0.7/angular.min.js"></script>
+		<script src="js/angular.js"></script>
+
+		<!-- other scripts -->
+		<script src="js/script.js"></script>
+	</body>
+</html>
