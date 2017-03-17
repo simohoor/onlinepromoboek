@@ -1,0 +1,19 @@
+.logo-footer {
+  margin-top:11px;
+  width: 50px;
+}
+
+@media screen and (max-width: 450px) {
+
+  footer p {
+    font-size: 12px;
+  }
+
+}
+
+@media screen and (max-width: 310px) {
+  
+  footer p {
+    font-size: 10px;
+  }
+}

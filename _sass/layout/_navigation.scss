@@ -1,0 +1,52 @@
+.nav-wrapper {
+  background-color: white;
+}
+.nav-wrapper a {
+  color: #5d5d5d;
+  font-family: 'Montserrat', sans-serif;
+}
+
+nav .brand-logo {
+  color: #2a4ad3;
+  margin-left: 25px;
+}
+
+.logo img {
+   height: 40px;
+   margin-left: 20px;
+   margin-top:10px;
+}
+
+.dropdown-content li>a, .dropdown-content li>span {
+  color: #2a4ad3;
+}
+
+@media screen and (max-width: 700px) {
+  
+  .nav-wrapper {
+    margin-bottom: 200px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  #nav-mobile li a {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+
+  #nav-mobile li{
+    display: block;
+  }
+}
+
+@media screen and (max-width: 390px) {
+
+  #nav-mobile li a {
+    font-size: 11px;
+    margin:5px;
+    padding:5px;
+  }
+}

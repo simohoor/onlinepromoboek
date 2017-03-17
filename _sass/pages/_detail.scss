@@ -1,0 +1,215 @@
+a.back {
+  float: right;
+  font-size: 24px;
+  color:#06214c;
+}
+
+a.back:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+i.back-icon {
+  float: right;
+  padding-top:7px;
+  padding-right: 10px;
+  font-size: 25px;
+}
+
+.tag-container {
+  text-align: right;
+}
+
+.tags {
+  border: 2px solid #2a4ad3;
+  color: #2a4ad3;
+  border-radius: 5px;
+  padding: 1px 5px ;
+  margin-left:14px;
+}
+
+li > a {
+  font-size: 16px;
+  font-weight: normal;
+  font-weight:bold;
+  color:#111;
+}
+
+.left-container {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-left: 250px;
+  margin-top: -450px;
+  width:100%;
+}
+
+.info {
+  text-transform: none;
+  font-weight: lighter;
+  width: auto;
+}
+
+.left-container li {
+  width: 49%;
+  display: inline-block;
+}
+
+.left-container, .right-container {
+  width: 450px;
+  z-index:2;
+}
+
+.student-picture{
+  position: relative;
+  left:-130px;
+  display: block;
+  margin-top: 20px; 
+  width: 330px;
+  height: auto;  
+}
+
+.card-container {
+  height: 500px; 
+  background-color: #c41435;
+}
+#firstname, #lastname {
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: 50px;
+}
+#lastname {
+  font-size: 42px;
+}
+#firstname {
+  margin-left:-100px;
+  z-index: 0;
+  position:relative;
+  text-shadow: 2px 2px 5px #c41435;
+}
+
+#firstname-mobile, #lastname-mobile {
+  display:none;
+}
+
+#lastname {
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1180px) {
+  .row .col.s3 {
+    width:33%;
+  }
+  .student-block {
+    height: 600px;
+  } 
+  .left-container {
+    width:auto;
+  }
+}
+
+@media screen and (max-width: 993px) {
+  
+  .student-picture{
+    margin-left: 50px;
+    height: auto;
+  }
+
+  .left-container {
+    margin-left:280px;
+    width:auto;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  
+  .left-container li {
+    width: 100%;
+    display: block;
+  }
+
+  .student-picture{
+    margin-left: 60px;
+    height: auto;
+  }
+
+  .card-container {
+    height: 550px;
+  } 
+
+  .left-container {
+    margin-top: -450px;
+    margin-left:300px;
+  }
+
+  #firstname, #lastname {
+    font-size: 38px;
+  }
+
+  #lastname {
+    font-size: 25px;
+  }
+
+  .student-link {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  
+  .card-container {
+    height: auto;
+  } 
+
+  .student-picture {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    left:0; 
+    position: static;
+  }
+
+  .left-container{
+    margin-top:50px;
+    margin-left: 0px;
+    font-size: 20px;
+    padding-bottom: 30px;
+  }
+
+  #firstname, #lastname {
+    display: none;
+  }
+
+  #firstname-mobile, #lastname-mobile {
+    display:block;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 40px;
+  }
+  
+  #firstname-mobile {
+    z-index: 0;
+    position:relative
+  }
+
+  #lastname-mobile {
+    margin-bottom: 30px;
+  }
+
+  a.student-link {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  
+  #lastname-mobile {
+    font-size: 30px;
+  }
+
+  .left-container {
+    font-size: 18px;
+  }
+
+}

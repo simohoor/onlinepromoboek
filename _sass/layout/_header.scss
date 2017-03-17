@@ -1,0 +1,90 @@
+.school-year {
+  border-top: 1px solid #2a4ad3;
+  border-bottom: 1px solid #2a4ad3;
+  width:70px;
+  float:left;
+  margin-right: 50px;
+}
+
+.education {
+  text-align: left;
+  font-size: 34px;
+  line-height: 1.4em;
+}
+
+h1.title {
+  margin-top: 50px;
+}
+
+header .student-video {
+  height: 91vh;
+  width:100%;
+}
+
+@media screen and (max-width: 993px) {
+
+  header .student-video {
+    height:550px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  
+  .title {
+    color:#2a4ad3;
+    text-align: center;
+    width:351px;
+    margin: auto;
+  }
+
+  .education {
+    text-align: left;
+    font-size: 24px;
+    line-height: 1.4em;
+    margin-top: 50px;
+  } 
+
+  .school-year {
+    font-size: 0.8em;
+    line-height: 1em;
+    width: 50px;
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) { 
+
+  iframe {
+    margin-top:100px;
+  }
+
+  header .student-video {
+    height: 300px;
+    width:100%;
+  }
+}
+
+@media screen and (max-width: 390px) {
+
+  .education {
+    font-size: 18px;
+    padding-top:10px;
+  }
+  .school-year {
+    margin-left: 10px;
+  }
+
+  .title {
+    color:#2a4ad3;
+    text-align: center;
+    width:100%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 310px) {
+  h1.title {
+    width:100%;
+    margin: auto;
+  }
+}

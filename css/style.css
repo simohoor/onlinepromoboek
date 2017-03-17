@@ -243,8 +243,6 @@ form {
   margin-top:50px;
 }
 
-
-
 #checkboxlist {
   margin-bottom:20px;
 }
@@ -266,13 +264,11 @@ form {
   color:white;
   background-color: #2a4ad3;
 }
+
 .sort-container .btn:hover{
   background-color: #c41435;
 }
-.btn.active{
-    background:#c41435;
-    color:white;
-}
+
 button.btn:active{
     background:#c41435;
     color:white;

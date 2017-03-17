@@ -1,0 +1,118 @@
+.list-container {
+  max-width:1180px;
+}
+
+.list-student-picture {
+  width: 100%;
+}
+
+.student-block {
+  float:left;
+  height: 450px;
+  margin-bottom:100px;
+  padding-top:50px;
+}
+
+.name {
+  font-size: 22px;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  color: #2a4ad3;
+}
+
+.name, .richting {
+  text-align: center;
+}
+
+.richting {
+  color:grey;
+  line-height: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.name:hover {
+    text-decoration: underline;
+}
+
+.student-link {
+  margin-bottom: 15px;
+}
+
+a.student-link:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1180px) {
+  .row .col.s3 {
+    width:33%;
+  }
+  .student-block {
+    height: 600px;
+  } 
+}
+
+@media screen and (max-width: 993px) {
+
+  .student-block {
+    height: 500px;
+  } 
+}
+
+@media screen and (max-width: 900px) {
+
+  .student-block {
+    height: 440px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+
+  .row .col.s3 {
+    width:50%;
+  }
+
+  .student-block {
+    height: 580px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  
+  .student-block {
+    height: 540px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  .student-block {
+    height: 400px;
+  }
+
+  h3.name {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+
+  .student-block {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+
+  .student-block {
+    height: 240px;
+  }
+
+  h3.name {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  p.richting {
+    font-size: 11px;
+  }
+}

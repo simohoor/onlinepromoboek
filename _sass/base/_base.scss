@@ -1,0 +1,64 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+/**
+ * Set up a decent box model on the root element
+ */
+html {
+  box-sizing: border-box;
+}
+
+/**
+ * Make all elements from the DOM inherit from the parent box-sizing
+ * Since `*` has a specificity of 0, it does not override the `html` value
+ * making all elements inheriting from the root box-sizing value
+ * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+*, *::before, *::after {
+  box-sizing: inherit;
+} 
+
+body {
+  background-color: #f2f2f2;
+}
+
+p {
+  margin:0;
+}
+
+.sort-container {
+  width:532px;
+  display: block;
+  margin: auto;
+}
+
+.sort { 
+  color:#fff;
+  text-decoration: none;
+  background-color: #2a4ad3;
+  margin:25px;
+  margin-top:0;
+  font-size: 12px;
+}
+
+.sort:focus {
+  outline:none;
+  background-color: #c41435;
+  color:white;
+}
+
+.search-helper {
+  margin-top: 100px;
+  color:grey;
+  text-align: center;
+  margin-bottom:0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.title {
+  color:#2a4ad3;
+  text-align: center;
+  width:503px;
+  margin: auto;
+}

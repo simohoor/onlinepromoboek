@@ -1,0 +1,114 @@
+.btn {
+  background-color:white;
+  color:black;
+}
+
+.btn:hover {
+  color:white;
+  background-color: #2a4ad3;
+}
+
+.sort-container .btn:hover{
+  background-color: #c41435;
+}
+
+button.btn:active{
+    background:#c41435;
+    color:white;
+}
+
+@media screen and (max-width: 1400px) {
+  
+    label.btn {
+      margin-left:500px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+  .column-filters label{
+    font-size: 11px;
+    padding:5px;
+  }
+}
+@media (min-width:700px) { 
+	.column-filters {
+	    width: 33.333%;
+	    max-width: 300px;
+      padding-left: 6px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+
+  .row .col.offset-m3 {
+    width: 90%;
+    display: block;
+    margin-left:25px;
+    margin-right: 25px;
+  }
+}
+
+@media (max-width: 640px){
+
+    .button-contact {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) { 
+
+  .sort-container { 
+    width: 300px;
+    margin: auto;
+    margin-bottom: 25px;
+  }
+  .btn.sort{
+    width: 100%;
+    margin: 0;
+    margin-bottom:20px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+
+  .row .col.offset-m3 {
+    width: 92%;
+    margin-left:15px;
+  }
+
+  #checkboxlist {
+    width:100%;
+    margin-left:-4px;
+  }
+
+  #checkboxlist .filter {
+    padding-top:5px;
+    padding-bottom:30px;
+  }
+
+  div.column-filters label, .btn.sort {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+
+  .row .col.offset-m3 {
+    width: 90%;
+    margin-left:15px;
+  }
+
+  .sort-container {
+    width: 250px;
+  }
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,90 @@
+input {
+  border:solid 1px #ccc;
+  border-radius: 5px;
+  padding:7px 14px;
+  margin-bottom:10px
+}
+
+input:focus {
+  outline:none;
+  border-color:#aaa;
+}
+
+form {
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+
+#checkboxlist {
+  margin-bottom:20px;
+}
+
+#checkboxlist label {
+  margin: 10px;
+}
+
+[type="checkbox"] + label{
+  font-size: 12px;
+}
+
+#checkboxlist input[type=checkbox]:checked + label {
+  background-color: #2a4ad3;
+  color:white;
+}
+
+[type="checkbox"]+label:before, [type="checkbox"]:not(.filled-in)+label:after {
+  display: none;
+}
+
+#checkboxlist .filter {
+  padding-top:15px;
+  padding-bottom:35px;
+} 
+
+.row-filters,
+.column-filters {
+    box-sizing: border-box; 
+}
+
+.row-filters{
+    word-spacing: -1em; 
+    letter-spacing: -1em; 
+    overflow: hidden;
+    text-align: center;
+    padding: 0 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin:0 auto;
+}
+
+.column-filters {
+    vertical-align: top;
+    word-spacing: normal; 
+    letter-spacing: normal; 
+    display: inline-block;
+    width: 100%; 
+    padding-left:17px;
+    text-align: left; 
+}
+
+.column-filters .filter {
+  width:90%;
+  margin:25px;
+}
+
+@media screen and (max-width: 993px) {
+
+  .search-bar {
+    width:100%;
+    display: block;
+  }
+}
+
+@media (min-width:700px) { 
+
+   .column-filters label {
+     font-size: 14px;
+  }
+}
