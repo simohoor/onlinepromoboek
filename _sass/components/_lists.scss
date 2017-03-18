@@ -16,8 +16,9 @@
 .name {
   font-size: 22px;
   text-transform: uppercase;
-  font-family: 'Montserrat', sans-serif;
+  font-family: $title-font;
   color: #2a4ad3;
+  text-decoration: underline;
 }
 
 .name, .richting {
@@ -25,13 +26,15 @@
 }
 
 .richting {
-  color:grey;
+  color:$blue;
+  text-transform: uppercase;
   line-height: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: $basetext;
 }
 
 .name:hover {
-    text-decoration: underline;
+    color:$red;
+    transition: 0.3s;
 }
 
 .student-link {
@@ -116,3 +119,4 @@ a.student-link:hover {
     font-size: 11px;
   }
 }
+

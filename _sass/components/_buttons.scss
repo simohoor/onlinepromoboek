@@ -1,19 +1,26 @@
 .btn {
   background-color:white;
-  color:black;
+  color:$blue;
+  font-family: $basetext;
+  font-size: 11px;
+  border: 1px solid $blue;
+  box-shadow: none;
+}
+.btn.sort{
+    padding-top:2px;
 }
 
 .btn:hover {
   color:white;
-  background-color: #2a4ad3;
+  background-color: $blue;
 }
 
 .sort-container .btn:hover{
-  background-color: #c41435;
+  background-color: $blue;
 }
 
 button.btn:active{
-    background:#c41435;
+    background:$blue;
     color:white;
 }
 
@@ -27,10 +34,10 @@ button.btn:active{
 @media screen and (max-width: 800px) {
 
   .column-filters label{
-    font-size: 11px;
     padding:5px;
   }
 }
+
 @media (min-width:700px) { 
 	.column-filters {
 	    width: 33.333%;

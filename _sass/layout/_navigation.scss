@@ -2,12 +2,13 @@
   background-color: white;
 }
 .nav-wrapper a {
-  color: #5d5d5d;
-  font-family: 'Montserrat', sans-serif;
+  color: $blue;
+  font-family: $basetext;
+  text-transform: uppercase;
 }
 
 nav .brand-logo {
-  color: #2a4ad3;
+  color: $blue;
   margin-left: 25px;
 }
 
@@ -18,7 +19,7 @@ nav .brand-logo {
 }
 
 .dropdown-content li>a, .dropdown-content li>span {
-  color: #2a4ad3;
+  color: $blue;
 }
 
 @media screen and (max-width: 700px) {

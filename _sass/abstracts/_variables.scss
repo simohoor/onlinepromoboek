@@ -12,38 +12,20 @@ $base-url: '/assets/' !default;
 
 /// Regular font family
 
-$basetext:"Open Sans", sans-serif;
+$basetext:"Work Sans", sans-serif;
 
+$title-font: 'Montserrat', sans-serif;
 
+/// Blue color
+$blue: rgb(42, 74, 211) !default;
 
-/// Copy text color
-/// @type Color
-// $text-color: rgb(34, 34, 34) !default;
+/// Dark blue color
+$dark-blue: rgb(6, 33, 76) !default;
 
-// /// Main brand color
-// /// @type Color
-// $brand-color: rgb(17, 74, 153) !default;
-// $blue: rgb(17, 74, 153) !default;
+/// Red color
+$red: rgb(196, 20, 53) !default;
 
-// /// Darker blue (hover)
-// $dark-blue: rgb(10, 44, 92) !default;
-
-// /// Light grey
-// /// @type Color
-// $light-grey: rgb(237, 237, 237) !default;
-
-// /// Medium grey
-// /// @type Color
-// $mid-grey: rgb(153, 153, 153) !default;
-
-// /// Dark grey
-// /// @type Color
-// $dark-grey: rgb(68, 68, 68) !default;
-
-// //favorite colors
-// $favorite-color: #114a99;
-// $favorited-color: red;
-
+$light-grey: rgb(242, 242, 242) !default;
 
 /// Container's maximum width
 /// @type Length

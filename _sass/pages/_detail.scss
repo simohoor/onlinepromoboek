@@ -1,7 +1,7 @@
 a.back {
   float: right;
   font-size: 24px;
-  color:#06214c;
+  color:$dark-blue;
 }
 
 a.back:hover {
@@ -21,8 +21,8 @@ i.back-icon {
 }
 
 .tags {
-  border: 2px solid #2a4ad3;
-  color: #2a4ad3;
+  border: 2px solid $blue;
+  color: $blue;
   border-radius: 5px;
   padding: 1px 5px ;
   margin-left:14px;
@@ -70,7 +70,7 @@ li > a {
 
 .card-container {
   height: 500px; 
-  background-color: #c41435;
+  background-color: $red;
 }
 #firstname, #lastname {
   font-weight: bold;
@@ -85,7 +85,7 @@ li > a {
   margin-left:-100px;
   z-index: 0;
   position:relative;
-  text-shadow: 2px 2px 5px #c41435;
+  text-shadow: 2px 2px 5px $red;
 }
 
 #firstname-mobile, #lastname-mobile {
@@ -97,12 +97,7 @@ li > a {
 }
 
 @media screen and (max-width: 1180px) {
-  .row .col.s3 {
-    width:33%;
-  }
-  .student-block {
-    height: 600px;
-  } 
+  
   .left-container {
     width:auto;
   }

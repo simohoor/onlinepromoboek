@@ -1,6 +1,6 @@
 .school-year {
-  border-top: 1px solid #2a4ad3;
-  border-bottom: 1px solid #2a4ad3;
+  border-top: 1px solid $blue;
+  border-bottom: 1px solid $blue;
   width:70px;
   float:left;
   margin-right: 50px;
@@ -31,7 +31,7 @@ header .student-video {
 @media screen and (max-width: 700px) {
   
   .title {
-    color:#2a4ad3;
+    color:$blue;
     text-align: center;
     width:351px;
     margin: auto;
@@ -75,7 +75,7 @@ header .student-video {
   }
 
   .title {
-    color:#2a4ad3;
+    color:$blue;
     text-align: center;
     width:100%;
     margin: auto;

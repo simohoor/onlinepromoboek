@@ -1,5 +1,5 @@
 input {
-  border:solid 1px #ccc;
+  border:solid 1px grey;
   border-radius: 5px;
   padding:7px 14px;
   margin-bottom:10px
@@ -7,7 +7,7 @@ input {
 
 input:focus {
   outline:none;
-  border-color:#aaa;
+  border-color:grey;
 }
 
 form {
@@ -30,7 +30,7 @@ form {
 }
 
 #checkboxlist input[type=checkbox]:checked + label {
-  background-color: #2a4ad3;
+  background-color: $blue;
   color:white;
 }
 

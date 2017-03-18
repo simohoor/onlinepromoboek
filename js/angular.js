@@ -47,6 +47,13 @@
         $scope.isMmp = false;
         $scope.isCmo = false;
         $scope.isGmb = false;
+        //functie voor het resetten van de scope
+        $scope.resetlist = function(){
+            document.querySelector("label[for='Search']").className = "";
+            document.getElementById("Search").value = "";
+           
+            
+        };
         //functie voor het filteren van array waar voor & achternaam zich in bevinden
         $scope.setSelectedClient = function ($id) {
             var id = $id;
@@ -113,7 +120,7 @@
             $.ajax({
                 'async': false,
                 'global': false,
-                'url': "js/students.json",
+                'url': "data/students.json",
                 'dataType': "json",
                 'success': function (data) {
                     json = data;
