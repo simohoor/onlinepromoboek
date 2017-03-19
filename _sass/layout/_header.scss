@@ -33,8 +33,9 @@ header .student-video {
   .title {
     color:$blue;
     text-align: center;
-    width:351px;
+    width:355px;
     margin: auto;
+    margin-bottom:50px;
   }
 
   .education {
@@ -52,7 +53,7 @@ header .student-video {
   }
 }
 
-@media screen and (max-width: 600px) { 
+@media screen and (max-width: 650px) { 
 
   iframe {
     margin-top:100px;
@@ -67,11 +68,11 @@ header .student-video {
 @media screen and (max-width: 390px) {
 
   .education {
-    font-size: 18px;
-    padding-top:10px;
+    font-size: 14px;
+    padding-top:20px;
   }
   .school-year {
-    margin-left: 10px;
+    margin-left: 20px;
   }
 
   .title {
@@ -79,6 +80,17 @@ header .student-video {
     text-align: center;
     width:100%;
     margin: auto;
+    margin-bottom:50px;
+  }
+
+  iframe {
+    margin-top:200px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .education {
+    padding-top:10px;
   }
 }
 
@@ -86,5 +98,6 @@ header .student-video {
   h1.title {
     width:100%;
     margin: auto;
+    margin-bottom:50px;
   }
 }

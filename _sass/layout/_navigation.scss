@@ -22,13 +22,6 @@ nav .brand-logo {
   color: $blue;
 }
 
-@media screen and (max-width: 700px) {
-  
-  .nav-wrapper {
-    margin-bottom: 200px;
-  }
-}
-
 @media screen and (max-width: 500px) {
 
   #nav-mobile li a {
@@ -38,16 +31,39 @@ nav .brand-logo {
 
 @media screen and (max-width: 450px) {
 
-  #nav-mobile li{
-    display: block;
-  }
-}
-
-@media screen and (max-width: 390px) {
-
   #nav-mobile li a {
     font-size: 11px;
     margin:5px;
     padding:5px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+
+  .logo img{
+    width:150px;
+    display: block;
+    
+    height: auto;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  #nav-mobile li {
+    width: 100%;
+    display: block;
+    text-align: center;
+    background-color: $blue;
+    border:5px solid white;
+    padding:0;
+    margin: 0;
+  }
+  
+  #nav-mobile li a {
+    color:white;
+    font-size: 16px;
+    padding:0;
+    margin: 0;
   }
 }
