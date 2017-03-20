@@ -1,3 +1,4 @@
+/// Forms
 input {
   border:solid 1px grey;
   border-radius: 5px;
@@ -25,10 +26,6 @@ form {
   margin: 10px;
 }
 
-[type="checkbox"] + label{
-  font-size: 12px;
-}
-
 #checkboxlist input[type=checkbox]:checked + label {
   background-color: $blue;
   color:white;
@@ -49,10 +46,7 @@ form {
 }
 
 .row-filters{
-    word-spacing: -1em; 
-    letter-spacing: -1em; 
     overflow: hidden;
-    text-align: center;
     padding: 0 20px;
     width: 100%;
     max-width: 1200px;
@@ -61,17 +55,24 @@ form {
 
 .column-filters {
     vertical-align: top;
-    word-spacing: normal; 
-    letter-spacing: normal; 
     display: inline-block;
     width: 100%; 
     padding-left:17px;
-    text-align: left; 
 }
 
 .column-filters .filter {
   width:90%;
   margin:25px;
+}
+.input-field input[type=search] {
+  padding-left: 0;
+}
+
+.input-field .prefix.active {
+  color:$blue;
+}
+.prefix {
+  margin-top:5px;
 }
 
 @media screen and (max-width: 993px) {
@@ -79,12 +80,5 @@ form {
   .search-bar {
     width:100%;
     display: block;
-  }
-}
-
-@media (min-width:700px) { 
-
-   .column-filters label {
-     font-size: 14px;
   }
 }

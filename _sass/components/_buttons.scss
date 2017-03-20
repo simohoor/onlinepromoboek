@@ -1,8 +1,27 @@
+/// Buttons
+.sort-container {
+  width:532px;
+  display: block;
+  margin: auto;
+}
+
+.sort { 
+  color:#fff;
+  text-decoration: none;
+  background-color: $blue;
+  margin:25px;
+  margin-top:0;
+}
+
+.sort:focus {
+  outline:none;
+  background-color: $blue;
+  color:white;
+}
+
 .btn {
   background-color:white;
   color:$blue;
-  font-family: $basetext;
-  font-size: 11px;
   border: 1px solid $blue;
   box-shadow: none;
 }

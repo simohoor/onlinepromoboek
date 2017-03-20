@@ -1,3 +1,4 @@
+/// Infopage
 .info-image {
   width:100%;
   margin-top: 100px;
@@ -7,12 +8,11 @@
 .info-container {
   margin-bottom: 50px;
 }
+
 .info-container p {
   width: 75%;
   margin: auto;
   margin-bottom: 25px;
-  line-height: 2em;
-  font-family: $basetext;
 }
 
 @media screen and (max-width: 600px) { 

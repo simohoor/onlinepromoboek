@@ -1,3 +1,4 @@
+/// Lists
 .list-container {
   max-width:1180px;
 }
@@ -14,22 +15,12 @@
 }
 
 .name {
-  font-size: 22px;
-  text-transform: uppercase;
-  font-family: $title-font;
-  color: #2a4ad3;
-  text-decoration: underline;
-}
-
-.name, .richting {
-  text-align: center;
+  color: $blue;
+  transition: 0.3s;
 }
 
 .richting {
   color:$blue;
-  text-transform: uppercase;
-  line-height: 0;
-  font-family: $basetext;
 }
 
 .name:hover {
@@ -39,10 +30,6 @@
 
 .student-link {
   margin-bottom: 15px;
-}
-
-a.student-link:hover {
-  text-decoration: underline;
 }
 
 @media screen and (max-width: 1180px) {
@@ -91,10 +78,6 @@ a.student-link:hover {
   .student-block {
     height: 400px;
   }
-
-  h3.name {
-    font-size: 16px;
-  }
 }
 
 @media screen and (max-width: 450px) {
@@ -109,14 +92,4 @@ a.student-link:hover {
   .student-block {
     height: 240px;
   }
-
-  h3.name {
-    font-size: 12px;
-    line-height: 15px;
-  }
-
-  p.richting {
-    font-size: 11px;
-  }
 }
-

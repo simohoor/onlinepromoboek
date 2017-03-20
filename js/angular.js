@@ -1,5 +1,5 @@
 ; (function () {
-    //routing
+    // Routing
     var myapp = angular.module('myapp', []).config(function ($routeProvider, $interpolateProvider) {
         $interpolateProvider.startSymbol('[[');
         $interpolateProvider.endSymbol(']]');
@@ -22,7 +22,7 @@
 
     });
 
-    //list controller display students
+    // List controller display students
     myapp.controller('ListCtrl', function ($scope, $location, dataService) {
         $scope.originalitems = dataService.items;
         $scope.items = dataService.items;
@@ -30,7 +30,7 @@
         $scope.toggleForm = function () {
             $scope.showform = !$scope.showform;
         };
-        //filtering items voornaam vs achternaam
+        // Filtering items voornaam vs achternaam
         $scope.sort = [{
             id: 1,
             name: 'Voornaam',
@@ -41,20 +41,14 @@
             classname: 'isActiveLast'
 
         }];
-        // toggleclasses
+        // Toggleclasses
         $scope.isActiveFirst = false;
         $scope.isActiveLast = false;
         $scope.isMmp = false;
         $scope.isCmo = false;
         $scope.isGmb = false;
-        //functie voor het resetten van de scope
-        $scope.resetlist = function(){
-            document.querySelector("label[for='Search']").className = "";
-            document.getElementById("Search").value = "";
-           
-            
-        };
-        //functie voor het filteren van array waar voor & achternaam zich in bevinden
+    
+        // Functie voor het filteren van array waar voor & achternaam zich in bevinden
         $scope.setSelectedClient = function ($id) {
             var id = $id;
             if (id == 1) {
@@ -73,7 +67,7 @@
                 return null
             }
         };
-        //filtering op afstudeerrichting
+        // Filtering op afstudeerrichting
         $scope.setSorting = function ($field_of_study) {
             var field_of_study = $field_of_study;
             if (field_of_study == 'Multimediaproductie') {
@@ -100,7 +94,7 @@
         }
     });
 
-    //detail controller
+    // Detail controller
     myapp.controller('DetailCtrl', function ($scope, $location, dataService, $anchorScroll) {
         $scope.data = dataService.data;
 

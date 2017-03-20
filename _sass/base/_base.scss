@@ -1,20 +1,10 @@
 // -----------------------------------------------------------------------------
 // This file contains very basic styles.
 // -----------------------------------------------------------------------------
-
-/**
- * Set up a decent box model on the root element
- */
 html {
   box-sizing: border-box;
 }
 
-/**
- * Make all elements from the DOM inherit from the parent box-sizing
- * Since `*` has a specificity of 0, it does not override the `html` value
- * making all elements inheriting from the root box-sizing value
- * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
- */
 *, *::before, *::after {
   box-sizing: inherit;
 } 
@@ -27,38 +17,14 @@ p {
   margin:0;
 }
 
-.sort-container {
-  width:532px;
-  display: block;
-  margin: auto;
-}
-
-.sort { 
-  color:#fff;
-  text-decoration: none;
-  background-color: $blue;
-  margin:25px;
-  margin-top:0;
-  font-size: 12px;
-}
-
-.sort:focus {
-  outline:none;
-  background-color: $blue;
-  color:white;
-}
-
 .search-helper {
   margin-top: 100px;
   color:$blue;
-  text-align: center;
   margin-bottom:0;
-  font-family: $basetext;
 }
 
 .title {
   color:$blue;
-  text-align: center;
   width:503px;
   margin: auto;
 }

@@ -1,43 +1,31 @@
+/// Detailpage
+.detail-container {
+  margin-top: 120px;
+}
+
 a.back {
   float: right;
-  font-size: 24px;
-  color:$dark-blue;
+  color:$blue;
+  transition: 0.3s;
 }
 
 a.back:hover {
-  text-decoration: underline;
   cursor: pointer;
-}
-
-i.back-icon {
-  float: right;
-  padding-top:7px;
-  padding-right: 10px;
-  font-size: 25px;
-}
-
-.tag-container {
-  text-align: right;
+  color: $red;
+  transition: 0.3s;
 }
 
 .tags {
-  border: 2px solid $blue;
   color: $blue;
-  border-radius: 5px;
   padding: 1px 5px ;
   margin-left:14px;
 }
 
 li > a {
-  font-size: 16px;
-  font-weight: normal;
-  font-weight:bold;
-  color:#111;
+  color:white;
 }
 
 .left-container {
-  text-transform: uppercase;
-  font-weight: bold;
   margin-left: 250px;
   margin-top: -450px;
   width:100%;
@@ -72,21 +60,6 @@ li > a {
   height: 500px; 
   background-color: $red;
 }
-#firstname, #lastname {
-  font-weight: bold;
-  text-transform: uppercase;
-  text-decoration: underline;
-  font-size: 50px;
-}
-#lastname {
-  font-size: 42px;
-}
-#firstname {
-  margin-left:-100px;
-  z-index: 0;
-  position:relative;
-  text-shadow: 2px 2px 5px $red;
-}
 
 #firstname-mobile, #lastname-mobile {
   display:none;
@@ -96,10 +69,30 @@ li > a {
   margin-bottom: 30px;
 }
 
+@media screen and (max-width: 1400px) {
+
+  .container .row.detail-container, .tag-container {
+    margin:auto;
+    width: 80%;
+    margin-top:100px;
+  }
+
+  .tag-container {
+    margin-top:0;
+  }
+}
 @media screen and (max-width: 1180px) {
   
   .left-container {
     width:auto;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  
+  .container .row.detail-container, .tag-container {
+    width:90%;
+    margin-left:100px;
   }
 }
 
@@ -116,8 +109,12 @@ li > a {
   }
 }
 
-@media screen and (max-width: 900px) {
-  
+@media screen and (max-width: 950px) {
+
+  .container .row.detail-container, .tag-container {
+    margin-left:50px;
+  }
+
   .left-container li {
     width: 100%;
     display: block;
@@ -135,14 +132,6 @@ li > a {
   .left-container {
     margin-top: -450px;
     margin-left:300px;
-  }
-
-  #firstname, #lastname {
-    font-size: 38px;
-  }
-
-  #lastname {
-    font-size: 25px;
   }
 
   .student-link {
@@ -167,7 +156,6 @@ li > a {
   .left-container{
     margin-top:50px;
     margin-left: 0px;
-    font-size: 20px;
     padding-bottom: 30px;
   }
 
@@ -177,10 +165,6 @@ li > a {
 
   #firstname-mobile, #lastname-mobile {
     display:block;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-decoration: underline;
-    font-size: 40px;
   }
   
   #firstname-mobile {
@@ -192,19 +176,18 @@ li > a {
     margin-bottom: 30px;
   }
 
-  a.student-link {
-    font-size: 20px;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  
-  #lastname-mobile {
-    font-size: 30px;
+  .tags {
+    display: block;
+    width: 100%;
   }
 
-  .left-container {
-    font-size: 18px;
+  .container .row.detail-container, .tag-container {
+    margin:auto;
+    margin-top:100px;
   }
 
+  .tag-container {
+    margin-top:0;
+    margin-right: 45px;
+  }
 }

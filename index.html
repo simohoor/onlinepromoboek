@@ -10,7 +10,7 @@ layout: default
 
 				<!-- Header -->
 				<header>
-					<iframe src="https://player.vimeo.com/video/112384599?color=c9ff23" class="student-video" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+					<iframe src="https://player.vimeo.com/video/112384599" class="student-video" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 				</header>
 				<h1 class="title margin">
 					<div class="school-year">16 17</div>
@@ -25,9 +25,9 @@ layout: default
 					<div class="row margin">
 						<form class="col s6 offset-m3">
 						<div class="input-field">
-								<input class="search" id="Search" type="search" ng-model="searchText" required>
-								<label for="Search"><i class="material-icons">search</i></label>
-								<i class="material-icons" data-ng-click="resetlist()">close</i>
+							<i class="material-icons prefix">search</i>
+							<input class="search" id="Search" type="search" ng-model="searchText" required>
+							<i class="material-icons" data-ng-click="searchText = null">close</i>
 							</div>
 						</form>
 					</div> 
@@ -73,12 +73,8 @@ layout: default
 
 			<!--Detail of student-->
 			<script type="text/ng-template" id="/detail.html">  
-				<h1 class="title margin">
-					<div class="school-year">16 17</div>
-					<div class="education">ALUMNI 2016 - 2017<br> GRAFISCHE EN<br>DIGITALE MEDIA</div>
-				</h1>
 				<div class="container">
-					<div class="row">
+					<div class="row detail-container">
 						<!-- Templating -->
 						<a ng-click="back()" class="back">vorige</a><i class="fa fa-caret-left back-icon" aria-hidden="true"></i>
 						<div class="col s12 card card-container">
@@ -92,8 +88,9 @@ layout: default
 									<ul class="left-container">
 										<p id="firstname">[[ data.name ]]</p>
 										<p id="lastname">[[ data.lastname ]]</p>
-										<li class="student-link" ng-show="data.link">Link</li>
-										<li ng-show="data.link" class="right info"><a class="student-link" target="_blank" href="[[ data.link ]]">Meer persoonlijke info</a></li>
+										<li ng-show="data.link" class="right info"><a class="student-link" target="_blank" href="[[ data.link ]]">+ Meer info</a></li>
+										<li></li>
+										<li></li>
 										<li>E-mail</li>
 										<li class="right info">[[ data.mail ]]</li>
 										<li>Afstudeerrichting</li>

@@ -1,3 +1,282 @@
+/// Typography
+.search-helper,
+.btn, 
+.richting, 
+footer, 
+.nav-wrapper a,
+.tags, li > a,
+.info, 
+.info-container p {
+    font-family: $basetext;
+}
+
+.name, 
+a.student-link, 
+.left-container, 
+#firstname, 
+#lastname, 
+#firstname-mobile, 
+#lastname-mobile {
+    font-family: $title-font;
+}
+
+.name, 
+.richting, 
+.nav-wrapper a, 
+.tags, 
+li > a, 
+.left-container, 
+#firstname, 
+#lastname  {
+    text-transform: uppercase;
+}
+
+a.student-link, 
+.name, 
+li > a, 
+.left-container, 
+#firstname, 
+#lastname, 
+#firstname-mobile, 
+#lastname-mobile  {
+  font-weight: 700;
+}
+
+a.student-link:hover, 
+a.back:hover, 
+.name, 
+#firstname, 
+#lastname {
+  text-decoration: underline;
+}
+
+.search-helper,
+.name,
+.richting, 
+.title {
+    text-align: center;
+}
+
 .title {
     letter-spacing: 7px;
+}
+
+.sort, [type="checkbox"] + label { 
+    font-size: 12px;
+}
+
+.tags {
+  font-size: 18px;
+}
+
+.info {
+  text-transform: none;
+  font-weight: lighter;
+}
+
+#firstname, #lastname {
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.btn {
+    font-size: 11px;
+}
+
+.info-container p {
+  line-height: 2em;
+}
+
+.tag-container {
+  text-align: right;
+}
+
+li > a {
+  font-size: 16px;
+}
+
+a.back {
+  font-size: 24px;
+}
+
+.name {
+    font-size: 22px;
+}
+
+.left-container {
+  text-transform: uppercase;
+}
+
+.richting {
+  line-height: 0;
+}
+
+.education {
+  text-align: left;
+  font-size: 34px;
+  line-height: 1.4em;
+}
+
+footer li a { 
+  text-transform: none;
+}
+
+.row-filters{
+    word-spacing: -1em; 
+    letter-spacing: -1em; 
+    text-align: center;
+}
+
+.column-filters {
+    word-spacing: normal; 
+    letter-spacing: normal; 
+    text-align: left; 
+}
+
+@media screen and (max-width: 950px) {
+
+  #firstname, #lastname {
+    font-size: 38px;
+  }
+
+  #lastname {
+    font-size: 25px;
+  }
+}
+
+@media (min-width:700px) { 
+
+   .column-filters label {
+     font-size: 14px;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .education {
+    text-align: left;
+    font-size: 24px;
+    line-height: 1.4em;
+  } 
+
+  .school-year {
+    font-size: 0.8em;
+    line-height: 1em;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  
+  .left-container{
+    font-size: 20px;
+  }
+
+  #firstname-mobile, #lastname-mobile {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 40px;
+  }
+
+  a.student-link {
+    font-size: 20px;
+  }
+
+  .education {
+    font-size: 24px;
+  }
+
+  .school-year {
+    font-size: 0.8em;
+    line-height: 1em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+    h3.name {
+    font-size: 16px;
+  }
+
+  #nav-mobile li a {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+
+  footer p {
+    font-size: 12px;
+  }
+
+  #nav-mobile li a {
+    font-size: 11px;
+  }
+
+  #lastname-mobile {
+    font-size: 25px;
+  }
+
+  .left-container {
+    font-size: 18px;
+  }
+
+  .info {
+    font-size:14px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+
+  h3.name {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  p.richting {
+    font-size: 11px;
+  }
+
+  .education {
+    font-size: 14px;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .school-year {
+    font-size: 0.5em;
+    line-height: 1em;
+  }
+}
+
+@media screen and (max-width: 370px) {
+
+  #nav-mobile li {
+    text-align: center;
+  }
+  
+  #nav-mobile li a {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+
+  .left-container {
+    font-size:13px;
+  }
+
+  .info {
+    font-size:11px;
+  }
+}
+
+@media screen and (max-width: 310px) {
+  
+  footer p {
+    font-size: 10px;
+  }
 }
