@@ -103,7 +103,7 @@
             $location.hash("student" + id);
             $location.path('/home');
             window.history.back();
- 
+            $anchorScroll();
         };
     });
 
@@ -147,7 +147,7 @@
                     data.studentnr = items[id - 1].studentnr;
 
                     defer.resolve(data);
-                }, 0);
+                }, 10);
                 return defer.promise;
             }
         };
